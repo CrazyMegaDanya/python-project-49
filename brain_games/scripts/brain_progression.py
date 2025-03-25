@@ -15,7 +15,7 @@ def main():
             element_list.append(first_element + i * step)
         search_element = element_list[hidden_element]
         element_list[hidden_element] = '..'
-        print('Question: ', *element_list)
+        print('Question:', *element_list)
         answer = prompt.string("Your answer: ")
         if int(answer) == search_element:
             print('Correct!')
