@@ -27,9 +27,11 @@ def main():
             print("Correct!")
         elif answer == "yes" and is_prime(quest_number) == "no":
             print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+            print(f"Let's try again, {name}!")
             return
         elif answer == "no" and is_prime(quest_number) == "yes":
             print("'no' is wrong answer ;(. Correct answer was 'yes'.")
+            print(f"Let's try again, {name}!")
             return
         right_count += 1
     print(f"Congratulations, {name}!")
