@@ -18,7 +18,9 @@ def is_prime(number):
 
 def main():
     name = welcome_user()
-    msg = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    msg = ('Answer "yes" if given number is prime.'
+        'Otherwise answer "no".'
+    )
     print(msg)
     right_count = 0
     while right_count < 3:
@@ -28,12 +30,16 @@ def main():
         if answer == is_prime(quest_number):
             print("Correct!")
         elif answer == "yes" and is_prime(quest_number) == "no":
-            msg = "'yes' is wrong answer ;(. Correct answer was 'no'."
+            msg = ("'yes' is wrong answer ;(. "
+                   "Correct answer was 'no'."
+            )
             print(msg)
             print(f"Let's try again, {name}!")
             return
         elif answer == "no" and is_prime(quest_number) == "yes":
-            msg = "'no' is wrong answer ;(. Correct answer was 'yes'."
+            msg = ("'no' is wrong answer "
+                ";(. Correct answer was 'yes'."
+            )
             print(msg)
             print(f"Let's try again, {name}!")
             return

@@ -6,7 +6,9 @@ import math
 
 def main():
     name = welcome_user()
-    msg = 'Find the greatest common divisor of given numbers.'
+    msg = ('Find the greatest common '
+           'divisor of given numbers.'
+    )
     print(msg)
     right_count = 0
     while right_count < 3:
@@ -19,7 +21,9 @@ def main():
             print('Correct!')
             right_count += 1
         else:
-            msg = f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'."
+            msg = (f"'{user_answer}' is wrong answer ;(. "
+                   f"Correct answer was '{correct_answer}'."
+            )
             print(msg)
             print(f"Let's try again, {name}!")
             return

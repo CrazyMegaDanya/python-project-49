@@ -5,7 +5,9 @@ from brain_games.cli import welcome_user
 
 def main():
     name = welcome_user()
-    msg = 'What number is missing in the progression?'
+    msg = ("What number is missing "
+        "in the progression?"
+    )
     print(msg)
     right_count = 0
     while right_count < 3:
@@ -23,7 +25,9 @@ def main():
             print('Correct!')
             right_count += 1
         else:
-            msg = f"'{answer}' is wrong answer ;(. Correct answer was '{search_element}'."
+            msg = (f"'{answer}' is wrong answer ;(. "
+                   f"Correct answer was '{search_element}'."
+            )
             print(msg)
             print(f"Let's try again, {name}!")
             return
