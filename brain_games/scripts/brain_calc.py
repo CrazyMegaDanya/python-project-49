@@ -19,8 +19,9 @@ def main():
                 print('Correct!')
                 right_count += 1
             else:
-                msg = (f"'{user_answer}' is wrong answer ;(. "
-                       f"Correct answer was '{correct_answer}'."
+                msg = (
+                    f"'{user_answer}' is wrong answer ;(. "
+                    f"Correct answer was '{correct_answer}'."
                 )
                 print(msg)
                 print(f"Let's try again, {name}!")
@@ -33,8 +34,9 @@ def main():
                 print('Correct!')
                 right_count += 1
             else:
-                msg = (f"'{user_answer}' is wrong answer ;(. "
-                       f"Correct answer was '{correct_answer}'."
+                msg = (
+                    f"'{user_answer}' is wrong answer ;(. "
+                    f"Correct answer was '{correct_answer}'."
                 )
                 print(msg)
                 print(f"Let's try again, {name}!")
@@ -47,8 +49,9 @@ def main():
                 print('Correct!')
                 right_count += 1
             else:
-                msg = (f"'{user_answer}' is wrong answer ;(. "
-                       f"Correct answer was '{correct_answer}'."
+                msg = (
+                    f"'{user_answer}' is wrong answer ;(. "
+                    f"Correct answer was '{correct_answer}'."
                 )
                 print(msg)
                 print(f"Let's try again, {name}!")
