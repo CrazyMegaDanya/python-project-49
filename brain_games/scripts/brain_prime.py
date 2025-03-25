@@ -2,6 +2,7 @@ import random
 import prompt
 from brain_games.cli import welcome_user
 
+
 def is_prime(number):
     if number <= 1:
         return "no"
@@ -17,7 +18,8 @@ def is_prime(number):
 
 def main():
     name = welcome_user()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    msg = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    print(msg)
     right_count = 0
     while right_count < 3:
         quest_number = random.randint(1, 100)
@@ -26,15 +28,18 @@ def main():
         if answer == is_prime(quest_number):
             print("Correct!")
         elif answer == "yes" and is_prime(quest_number) == "no":
-            print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+            msg = "'yes' is wrong answer ;(. Correct answer was 'no'."
+            print(msg)
             print(f"Let's try again, {name}!")
             return
         elif answer == "no" and is_prime(quest_number) == "yes":
-            print("'no' is wrong answer ;(. Correct answer was 'yes'.")
+            msg = "'no' is wrong answer ;(. Correct answer was 'yes'."
+            print(msg)
             print(f"Let's try again, {name}!")
             return
         right_count += 1
     print(f"Congratulations, {name}!")
+
 
 if __name__ == '__main__':
     main()

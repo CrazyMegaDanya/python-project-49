@@ -2,9 +2,11 @@ import random
 import prompt
 from brain_games.cli import welcome_user
 
+
 def main():
     name = welcome_user()
-    print('What number is missing in the progression?')
+    msg = 'What number is missing in the progression?'
+    print(msg)
     right_count = 0
     while right_count < 3:
         element_list = []
@@ -21,10 +23,12 @@ def main():
             print('Correct!')
             right_count += 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{search_element}'.")
+            msg = f"'{answer}' is wrong answer ;(. Correct answer was '{search_element}'."
+            print(msg)
             print(f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
+
 
 if __name__ == '__main__':
     main()
