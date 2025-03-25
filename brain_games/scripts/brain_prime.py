@@ -19,7 +19,7 @@ def is_prime(number):
 def main():
     name = welcome_user()
     msg = (
-        'Answer "yes" if given number is prime.'
+        'Answer "yes" if given number is prime. '
         'Otherwise answer "no".'
     )
     print(msg)
