@@ -1,5 +1,5 @@
 #Makefile
-istall:	# install
+install:	# install
 	uv sync
 
 brain-games: # start game
@@ -10,3 +10,5 @@ build: # build project
 
 package-install: #install package
 	uv tool install dist/*.whl
+lint: # ruff check
+	uv run ruff check brain_games
